@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Estudo para AZ-204</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .flashcard-scene {
+            perspective: 1000px;
+        }
+        .flashcard {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .flashcard-face {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        .flashcard-back {
+            transform: rotateY(180deg);
+        }
+        .is-flipped {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center my-8">
+            <h1 class="text-4xl sm:text-5xl font-bold text-cyan-400">Flashcards de Estudo para AZ-204 (150 Cartões)</h1>
+            <p class="text-gray-400 mt-2 text-lg">Clique em um cartão para virá-lo e ver a resposta.</p>
+        </header>
+
+        <!-- Seção de Compute -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold border-l-4 border-cyan-400 pl-4 mb-6 text-gray-200">Develop Azure compute solutions (30)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards de Compute -->
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Container Registry (ACR)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço de registro <strong>privado e gerenciado</strong> para imagens de contêiner Docker e OCI, permitindo construir, armazenar e gerenciar imagens.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Container Instances (ACI)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A maneira mais rápida e simples de executar um contêiner no Azure, <strong>sem gerenciar servidores ou orquestradores</strong>. Ideal para tarefas simples e automação.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Container Apps (ACA)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma plataforma <strong>serverless</strong> sobre Kubernetes, para rodar microsserviços em contêineres. Inclui escalonamento, Ingress e Dapr.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Deployment Slots</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Ambientes "live" para <strong>validar alterações em staging</strong> antes do "swap" com produção, garantindo implantações com <strong>zero downtime</strong>.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Plano do App Service</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Define os recursos de computação (região, SKU, VMs) para seus Web Apps. Vários apps podem compartilhar o mesmo plano.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Durable Functions</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma extensão do Azure Functions para escrever fluxos de trabalho <strong>stateful</strong> (que guardam estado) em um ambiente serverless.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença entre <strong>Scale-up</strong> e <strong>Scale-out</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Scale-up (vertical)</strong>: Aumenta os recursos da VM (CPU, memória).<br><strong>Scale-out (horizontal)</strong>: Aumenta o número de instâncias da VM.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>ACR Tasks</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um conjunto de recursos dentro do Azure Container Registry para construir, testar e aplicar patches em imagens de contêiner na nuvem, de forma automatizada.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quais os 3 tipos de <strong>gatilhos (triggers)</strong> de Azure Functions?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">1. <strong>Timer</strong> (agendado), 2. <strong>Data operations</strong> (ex: novo blob, mensagem na fila), 3. <strong>Webhooks</strong> (requisição HTTP).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a configuração <strong>WEBSITE_RUN_FROM_PACKAGE</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma configuração de App Service/Function App que monta um arquivo ZIP (de uma URL) como o diretório `wwwroot` somente leitura. Melhora a performance de deploy e evita conflitos de lock de arquivos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são os <strong>Planos de Hospedagem</strong> de Azure Functions?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Consumption</strong> (Paga pelo uso, escala auto), <strong>Premium</strong> (Instâncias pré-aquecidas, sem cold start, VNet), e <strong>Dedicated/App Service Plan</strong> (Recursos fixos).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve o <strong>Dapr (Distributed Application Runtime)</strong> no ACA?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Abstrai desafios comuns de microsserviços, como chamadas serviço-a-serviço, pub/sub, gerenciamento de estado e segredos, através de APIs sidecar.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>VNet Integration</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Permite que seu aplicativo acesse recursos em uma Rede Virtual (VNet) do Azure, como VMs, bancos de dados ou outros serviços que não estão expostos publicamente.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Revisões (Revisions)</strong> em Azure Container Apps?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Cada vez que você atualiza a imagem do contêiner ou a configuração, uma nova revisão imutável é criada. O ACA permite dividir o tráfego entre diferentes revisões (ex: para testes A/B).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como configurar <strong>diagnóstico e logging</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Através das "Configurações de diagnóstico", enviando logs de aplicação, servidor web e métricas para o Log Analytics, Storage Account ou Event Hubs.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Custom Handlers</strong> em Azure Functions?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Permitem usar qualquer linguagem ou runtime que suporte HTTP (Go, Rust, etc.) para criar uma Azure Function, bastando expor um web server local.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve o arquivo <strong>host.json</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Contém opções de configuração globais que afetam todas as funções em uma Function App, como logging, timeouts e configurações de extensões (bindings).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a configuração <strong>CORS</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Cross-Origin Resource Sharing. Permite que um script em uma página web de uma origem (domínio) acesse recursos (APIs) em outra origem.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>App Service Authentication</strong> (Easy Auth)?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um recurso que integra autenticação (Microsoft Entra ID, Google, etc.) ao seu App Service ou Function App com configuração mínima, sem alterar o código.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quais os <strong>níveis de autorização</strong> de um HTTP Trigger?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Anonymous</strong> (sem chave), <strong>Function</strong> (requer chave de função), e <strong>Admin</strong> (requer a chave mestre).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como funciona o <strong>TimerTrigger</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Executa uma função em um agendamento definido por uma expressão CRON. Ex: `0 */5 * * * *` executa a cada 5 minutos.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Geo-replicação</strong> no ACR?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um recurso do tier Premium que replica as imagens do seu registro para outras regiões do Azure, permitindo deploys mais rápidos e resilientes.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como os <strong>slots de implantação</strong> herdam configurações?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Por padrão, todas as configurações são trocadas (swapped) com o slot de produção, a menos que sejam marcadas como "Deployment slot setting".</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Idempotência</strong> em Azure Functions?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">É o princípio de que executar a mesma operação múltiplas vezes produz o mesmo resultado que executá-la uma única vez. Importante para sistemas de mensagens com entrega "at-least-once".</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>"service connections"</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Refere-se a como seu aplicativo se conecta a outros serviços (banco de dados, storage, etc.), geralmente gerenciado por Connection Strings ou referências a Key Vault.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o padrão <strong>Singleton</strong> em Azure Functions?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Garante que apenas uma instância de uma função seja executada por vez (em todas as VMs). Útil para evitar condições de corrida em operações não-idempotentes.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como configurar <strong>TLS mútuo (mTLS)</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Configurando os "Client certificates", onde o App Service exige que o cliente apresente um certificado para se autenticar, além do servidor apresentar o seu.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Health Check</strong> no App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um endpoint que o App Service pode "pingar" para determinar se uma instância está saudável. Se não estiver, ela é removida do load balancer e reiniciada.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>"cold start"</strong> em Functions de Consumo?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O tempo de latência inicial para executar uma função que esteve inativa. Acontece porque a infraestrutura precisa ser alocada e o app iniciado.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como funciona o deploy de código a partir do <strong>GitHub Actions</strong> para o App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Usando um workflow YAML no repositório GitHub que define os passos para build, teste e deploy, utilizando um "publish profile" para autenticar no Azure.</p></div>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Seção de Storage -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold border-l-4 border-cyan-400 pl-4 mb-6 text-gray-200">Develop for Azure storage (30)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                 <!-- Cards de Storage -->
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quais as 5 <strong>APIs</strong> do Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>NoSQL</strong> (Core/SQL), <strong>MongoDB</strong>, <strong>Cassandra</strong>, <strong>Gremlin</strong> (grafo), e <strong>Table</strong>.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Change Feed</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um log persistente de <strong>todas as alterações</strong> em um contêiner, usado para criar lógicas reativas, como acionar uma Azure Function.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual a importância da <strong>Partition Key</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Distribui dados e requisições de forma uniforme entre as partições. Uma boa chave evita "hot partitions" e garante escalabilidade.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Request Units (RU/s)</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A moeda de performance que abstrai CPU, IOPS e memória. Você provisiona a taxa de transferência (throughput) em RU/s.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quais as <strong>Camadas de Acesso (Access Tiers)</strong> do Blob Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Hot</strong> (frequente), <strong>Cool</strong> (infrequente), <strong>Cold</strong> (raro), e <strong>Archive</strong> (offline). O custo de armazenamento diminui, mas o de acesso aumenta.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Gerenciamento do Ciclo de Vida</strong> no Blob Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Regras baseadas em políticas para automatizar a transição de blobs entre camadas ou para excluí-los, otimizando custos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Controle de Concorrência Otimista</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Usa a propriedade de sistema `_etag` (entity tag) para prevenir "lost updates". A operação falha se o ETag no servidor for diferente do ETag enviado pelo cliente.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>TTL (Time-to-Live)</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma configuração que permite ao Cosmos DB excluir itens automaticamente de um contêiner após um certo período de tempo (em segundos).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença entre <strong>Block</strong>, <strong>Page</strong> e <strong>Append</strong> Blobs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Block</strong>: Para upload de grandes arquivos (vídeos, imagens). <strong>Page</strong>: Para discos de VM (operações de leitura/escrita aleatórias). <strong>Append</strong>: Para logs (operações de anexar).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Exclusão reversível (Soft Delete)</strong> para blobs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Protege contra exclusão acidental, mantendo os dados excluídos por um período de retenção configurável, permitindo sua recuperação.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Índices Compostos</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Índices definidos em múltiplas propriedades para otimizar queries que filtram ou ordenam por mais de um campo, reduzindo o consumo de RUs.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são os <strong>modos de throughput</strong> do Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Provisioned</strong> (manual ou autoscale): você define as RU/s. <strong>Serverless</strong>: paga por RU consumida, ideal para cargas de trabalho esporádicas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve o <strong>Versioning</strong> de blobs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Cria automaticamente versões anteriores de um blob quando ele é modificado ou excluído, permitindo restaurar estados passados.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Propriedades vs Metadados</strong> de um blob?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Propriedades</strong>: Atributos do sistema (Content-Type, etc.).<br><strong>Metadados</strong>: Pares chave-valor definidos pelo usuário para informações personalizadas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Hospedagem de site estático</strong> no Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um recurso que permite servir conteúdo estático (HTML, CSS, JS) diretamente de um contêiner especial (`$web`) em uma conta de armazenamento.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Change Feed Processor Library</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma biblioteca que simplifica a leitura do Change Feed do Cosmos DB, gerenciando o estado (checkpoints) e a distribuição do trabalho entre múltiplos consumidores.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são as <strong>Políticas de Imutabilidade</strong> para blobs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Armazenam dados em um estado WORM (Write-Once, Read-Many), tornando-os não-apagáveis e não-modificáveis por um intervalo de tempo (Time-based) ou indefinidamente (Legal hold).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Blob Index Tags</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Atributos de índice de dados (chave-valor) que permitem categorizar e encontrar blobs específicos usando um serviço de consulta nativo, sem listar todos os contêineres.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Lease</strong> de blob?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um bloqueio (lock) de escrita e exclusão em um blob. Garante que apenas um cliente possa modificar ou apagar o blob por vez.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Data Lake Storage Gen2</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">É um conjunto de recursos para análise de big data, construído sobre o Azure Blob Storage, que adiciona um namespace hierárquico e semântica de sistema de arquivos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve o <strong>AzCopy</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma ferramenta de linha de comando para copiar dados de e para o Azure Blob Storage, File Storage e Table Storage com performance otimizada.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">`UpsertItemAsync` vs `ReplaceItemAsync` no SDK do Cosmos?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Upsert</strong>: Cria o item se não existir, ou o substitui se existir. <br><strong>Replace</strong>: Substitui um item existente; falha se o item não existir.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Stored Procedures</strong> no Cosmos DB (API NoSQL)?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Lógicas escritas em JavaScript que são executadas atomicamente dentro de uma partição lógica, permitindo transações em múltiplos documentos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como o <strong>SDK do Cosmos DB</strong> lida com retries?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O SDK possui uma política de retry embutida que tenta novamente as operações em caso de erros transitórios, como throttling (HTTP 429).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Contêiner de Lease</strong> no Change Feed?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">É um contêiner auxiliar usado pela Change Feed Processor Library para armazenar o estado (checkpoints) do processamento das partições do contêiner monitorado.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Blob Snapshot</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma versão somente leitura de um blob tirada em um ponto específico no tempo. Útil para backups.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve o <strong>consistency level Session</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Garante que, dentro de uma única sessão de cliente, as leituras sejam consistentes com as escritas ("read-your-own-writes"). É o nível de consistência padrão.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Autoscale Throughput</strong> no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Gerencia automaticamente as RU/s provisionadas, escalando para cima ou para baixo com base no uso, dentro de um intervalo máximo definido por você.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como você implementa uma transação no Cosmos DB?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Usando <strong>Stored Procedures</strong> (para múltiplos documentos na mesma partição lógica) ou o recurso de <strong>Transactional Batch</strong> no SDK (.NET/Java).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Posso consultar dados na camada <strong>Archive</strong> do Blob Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Não diretamente. Você precisa primeiro "reidratar" o blob para a camada Hot ou Cool, o que pode levar várias horas.</p></div>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Seção de Security -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold border-l-4 border-cyan-400 pl-4 mb-6 text-gray-200">Implement Azure security (30)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards de Security -->
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Plataforma de Identidade da Microsoft</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Serviço de identidade na nuvem (Microsoft Entra ID) que permite aos apps logar usuários e obter tokens para chamar APIs protegidas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é uma <strong>Shared Access Signature (SAS)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma URI que concede <strong>direitos de acesso restritos e delegados</strong> a recursos do Storage, com permissões e tempo de validade, sem expor a chave da conta.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a API do <strong>Microsoft Graph</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma API RESTful com um ponto de extremidade unificado (`graph.microsoft.com`) para acessar dados de serviços da nuvem da Microsoft (Entra ID, Office 365).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual a função do <strong>Azure Key Vault</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço para <strong>armazenar e gerenciar segredos de forma segura</strong>: chaves de API, senhas, connection strings, certificados e chaves de criptografia.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Managed Identities</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma identidade <strong>gerenciada no Microsoft Entra ID</strong> para um recurso do Azure se autenticar em outros serviços, <strong>eliminando credenciais no código</strong>.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300"><strong>App Configuration</strong> vs <strong>Key Vault</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>App Configuration</strong>: para configurações e feature flags. <strong>Key Vault</strong>: para segredos (senhas, chaves). Podem ser usados juntos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>MSAL (Microsoft Authentication Library)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma biblioteca de cliente que simplifica a obtenção de tokens da Plataforma de Identidade da Microsoft para autenticar usuários e acessar APIs.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>App Roles</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Permissões personalizadas para uma aplicação (ex: "Admin", "Reader"). Usuários ou outras aplicações podem ser atribuídos a esses papéis para controle de acesso.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença: <strong>System-assigned</strong> vs <strong>User-assigned</strong> Managed Identity?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>System</strong>: Ligada ao ciclo de vida de um recurso (criada e deletada com ele).<br><strong>User</strong>: Recurso independente que pode ser atribuído a múltiplos recursos.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Service Principal (Entidade de Serviço)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">É a instância de uma aplicação (App Registration) em um tenant do Entra ID. É a identidade local da aplicação, à qual permissões são concedidas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>token JWT</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">JSON Web Token. Um padrão aberto para criar tokens de acesso que contêm "claims" (informações) como um objeto JSON. Usado para autenticação e autorização.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença: <strong>Key Vault Access Policies</strong> vs <strong>RBAC</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Access Policies</strong>: Modelo antigo, permissões por cofre para um principal (usuário/app).<br><strong>RBAC</strong>: Modelo mais novo e granular, permite atribuir roles (ex: Key Vault Secrets User) em escopos diferentes.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>scopes</strong> na plataforma de identidade?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Definem as permissões específicas que uma aplicação cliente está solicitando para acessar uma API em nome de um usuário (ex: `User.Read`, `Mail.Send`).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>DefaultAzureCredential</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma classe nos SDKs do Azure que tenta se autenticar usando vários mecanismos em sequência (variáveis de ambiente, Managed Identity, Visual Studio, etc.). Simplifica a autenticação no desenvolvimento e produção.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quais os 3 tipos de SAS?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">1. <strong>User Delegation SAS</strong> (mais segura, usa credenciais Entra ID), 2. <strong>Service SAS</strong> (acesso a um recurso específico), 3. <strong>Account SAS</strong> (acesso a múltiplos serviços da conta).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Stored Access Policies</strong> para SAS?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Políticas de acesso definidas no lado do servidor (em um contêiner, fila, etc.) que controlam as permissões e validade de um SAS, permitindo revogá-lo facilmente.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença: <strong>Permissões Delegadas</strong> vs <strong>de Aplicação</strong> no Graph?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Delegadas</strong>: O app age em nome de um usuário logado. <strong>De Aplicação</strong>: O app tem permissão própria, sem usuário presente (para daemons, serviços de backend).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>validação de token</strong> em uma API?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O processo de verificar a assinatura, o emissor (issuer), o público (audience) e a validade (expiration) de um token de acesso para garantir que ele é autêntico e válido.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>proteção contra expurgo (purge protection)</strong> no Key Vault?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Quando habilitada junto com a exclusão reversível (soft delete), impede que segredos/chaves excluídos sejam permanentemente apagados (purgados) antes do fim do período de retenção.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Princípio do Menor Privilégio</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Conceder a uma identidade (usuário, app) apenas as permissões mínimas necessárias para realizar suas tarefas, e nada mais.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como usar um certificado do Key Vault em um App Service?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Importando o certificado para o App Service a partir do Key Vault e depois o vinculando a um domínio personalizado nas configurações de TLS/SSL.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o fluxo <strong>On-Behalf-Of (OBO)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um fluxo de autorização onde uma API de camada intermediária usa a identidade de um usuário para obter um token de acesso para chamar outra API (downstream).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são as <strong>Políticas de Acesso Condicional</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Regras no Microsoft Entra ID que avaliam sinais (usuário, localização, dispositivo) para impor controles de acesso, como exigir MFA ou bloquear o acesso.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>App Registration (Registro de App)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A definição global da sua aplicação no Microsoft Entra ID. Descreve o que o app pode fazer, quem pode usá-lo e quais APIs ele pode acessar.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como implementar <strong>RBAC</strong> no código?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Verificando as "claims" de papéis (`roles`) presentes no token de acesso do usuário para autorizar ou negar o acesso a certas funcionalidades.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>cliente confidencial vs público</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Confidencial</strong>: Apps que rodam em servidores e podem guardar segredos (APIs, web apps).<br><strong>Público</strong>: Apps que não podem guardar segredos (SPAs, apps mobile).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Microsoft Defender for Cloud</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma ferramenta de gerenciamento de postura de segurança e proteção contra ameaças que ajuda a fortalecer a segurança dos seus recursos na nuvem.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que servem os <strong>grupos de segurança de rede (NSG)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Atuam como um firewall para filtrar o tráfego de rede de e para recursos do Azure em uma VNet, com base em regras de segurança.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Firewall</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço de segurança de rede gerenciado e stateful que protege os recursos da sua VNet, filtrando tráfego com base em regras de aplicação, rede e inteligência de ameaças.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é uma <strong>referência do Key Vault</strong> no App Configuration?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">É um valor no App Configuration que aponta para um segredo no Key Vault. O app obtém o segredo do cofre de forma transparente, usando a identidade do App Configuration.</p></div>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Seção de Monitor -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold border-l-4 border-cyan-400 pl-4 mb-6 text-gray-200">Monitor and troubleshoot Azure solutions (30)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                 <!-- Cards de Monitor -->
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Application Insights</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço de <strong>APM (Application Performance Management)</strong> para monitorar aplicações, detectar anomalias, diagnosticar problemas e entender o uso.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>instrumentar uma aplicação</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Significa <strong>adicionar o SDK do Application Insights</strong> ao código (ou habilitar auto-instrumentação) para coletar e enviar dados de telemetria.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Testes de Disponibilidade</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Testes automatizados que enviam requisições web para sua aplicação de vários pontos do mundo para verificar disponibilidade e responsividade.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Para que serve a <strong>Kusto Query Language (KQL)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A linguagem usada para fazer consultas avançadas sobre os dados de logs e telemetria no Application Insights e Azure Monitor Logs.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença: <strong>Métricas</strong> vs <strong>Logs</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Métricas</strong>: Valores numéricos coletados em intervalos regulares (contadores, gauges).<br><strong>Logs</strong>: Eventos com carimbo de data/hora e propriedades detalhadas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Rastreabilidade Distribuída (Distributed Tracing)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A capacidade de rastrear uma única requisição através de múltiplos serviços (microsserviços), correlacionando as chamadas para entender o fluxo completo e identificar gargalos.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Application Map</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma visualização dos componentes da sua aplicação e suas dependências, mostrando o fluxo de chamadas e indicadores de performance (taxa de sucesso, duração).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Action Groups</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma coleção de ações (email, SMS, webhook, etc.) que podem ser acionadas por um alerta do Azure Monitor. São reutilizáveis em múltiplos alertas.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Sampling (Amostragem)</strong> no App Insights?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma técnica para reduzir o volume (e custo) de telemetria, enviando apenas uma porcentagem dos dados, mantendo a correlação entre os itens.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Eventos Personalizados (Custom Events)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Telemetria que você envia do seu código para rastrear ações específicas do usuário ou eventos de negócio (ex: `TrackEvent("ItemAdicionadoAoCarrinho")`).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Log Analytics Workspace</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O ambiente do Azure Monitor para armazenar, gerenciar e analisar dados de logs de vários recursos do Azure e de ambientes on-premises.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que o <strong>Profiler</strong> do App Insights faz?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Captura automaticamente traços detalhados do desempenho de requisições lentas em produção, ajudando a identificar o "hot path" (caminho quente) no código.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Snapshot Debugger</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Coleta automaticamente um snapshot de depuração (variáveis locais, call stack) quando uma exceção ocorre em produção, sem parar a execução da aplicação.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como você rastreia <strong>dependências</strong> no App Insights?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A auto-instrumentação captura automaticamente chamadas para dependências externas, como bancos de dados SQL, APIs HTTP e Storage.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Workbooks</strong> no Azure Monitor?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Relatórios visuais interativos que combinam texto, consultas de logs, métricas e parâmetros em um único documento, para análise e troubleshooting.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>Smart Detection</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um recurso que usa machine learning para analisar proativamente a telemetria e alertar sobre possíveis problemas de performance ou falhas.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como a interface <strong>ILogger</strong> se integra com o App Insights?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Em apps .NET, logs escritos via ILogger (`_logger.LogInformation`, etc.) são automaticamente capturados pelo SDK do App Insights e enviados como telemetria de `trace`.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual o propósito de `TrackException()`?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Para enviar manualmente informações sobre exceções para o Application Insights, especialmente útil para exceções tratadas (em blocos `catch`) que você ainda quer monitorar.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>Telemetry Processor</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um componente do pipeline de coleta que permite modificar ou filtrar a telemetria no cliente antes que ela seja enviada para o Azure (ex: remover PII).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que o <strong>Activity Log</strong> do Azure registra?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Eventos no nível da subscrição, como a criação, modificação ou exclusão de recursos do Azure (o "quem, o quê e quando" das operações no ARM).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Live Metrics</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um stream de métricas de performance (requisições, CPU, etc.) com latência de ~1 segundo, útil para monitorar um novo deploy ou diagnosticar um problema em tempo real.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que a tabela `requests` contém em KQL?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Registra detalhes sobre cada requisição recebida pela sua aplicação, como URL, duração, código de resultado, e ID de correlação.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>alerta de métrica</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um alerta que é acionado quando o valor de uma métrica cruza um limiar definido (ex: CPU > 90% por 5 minutos).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é um <strong>alerta de log</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um alerta que é acionado com base no resultado de uma consulta KQL executada em intervalos regulares (ex: alertar se o número de exceções > 10 na última hora).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como você pode analisar falhas no App Insights?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Através do painel "Failures", que agrupa exceções e requisições falhas, permitindo analisar detalhes, contar ocorrências e ver a transação de ponta a ponta.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como você mede a performance no lado do cliente (browser)?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Instrumentando suas páginas web com o SDK JavaScript do Application Insights, que coleta telemetria de visualizações de página, chamadas AJAX e exceções no browser.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual o papel do <strong>ID de Correlação</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Conecta toda a telemetria (requisições, dependências, traces) gerada por uma única operação, permitindo a rastreabilidade distribuída.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Monitor Agent (AMA)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O novo agente para coletar logs e métricas de VMs, substituindo agentes legados. É configurado via "Data Collection Rules".</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Onde os dados do App Insights são armazenados?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Em um <strong>Log Analytics Workspace</strong> (modo baseado em workspace) ou em um armazenamento clássico do App Insights (que está sendo preterido).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é <strong>Resource Health</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço do Azure que informa sobre a saúde dos seus recursos individuais, diagnosticando problemas na plataforma Azure que possam estar te afetando.</p></div>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Seção de Connect -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold border-l-4 border-cyan-400 pl-4 mb-6 text-gray-200">Connect to and consume Azure services (30)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                 <!-- Cards de Connect -->
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure API Management (APIM)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço para <strong>publicar, proteger e monitorar APIs</strong>. Atua como um gateway na frente dos seus serviços de back-end.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Políticas (Policies)</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Regras que são executadas no request/response, permitindo modificar o comportamento da API sem alterar o código (ex: validar JWT, rate limiting).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300"><strong>Event Grid</strong> vs <strong>Event Hubs</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Event Grid</strong>: Roteamento de eventos discretos (pub/sub reativo).<br><strong>Event Hubs</strong>: Streaming de big data e telemetria contínua.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Consumer Groups</strong> no Event Hubs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Representam uma visão do stream de eventos. Cada app consumidor usa seu próprio grupo para ler o stream de forma independente.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300"><strong>Service Bus</strong> vs <strong>Queue Storage</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Queue Storage</strong>: Fila simples e barata.<br><strong>Service Bus</strong>: Robusto, com FIFO, transações, tópicos/assinaturas (pub/sub), sessões, DLQ.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é uma <strong>Dead-Letter Queue (DLQ)</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma fila secundária que armazena mensagens que não puderam ser processadas ou entregues, permitindo inspecioná-las e reprocessá-las.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Produtos e Assinaturas</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Produtos</strong>: Agrupam uma ou mais APIs. <strong>Assinaturas</strong>: Concedem acesso a um produto através de uma chave de API, permitindo controle de acesso e cotas.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Diferença: <strong>Service Bus Topics</strong> vs <strong>Queues</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Queues</strong>: Entregam uma mensagem para um único consumidor.<br><strong>Topics</strong>: Modelo publish/subscribe, entregam uma mensagem para múltiplos assinantes (subscriptions).</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Partições</strong> no Event Hubs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Subdivisões do stream de eventos. Permitem o consumo paralelo do stream, aumentando a taxa de transferência (throughput).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>filtragem de eventos</strong> no Event Grid?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">A capacidade de uma assinatura de evento receber apenas um subconjunto dos eventos publicados em um tópico, com base no tipo de evento ou em propriedades no corpo do evento.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Modos de recebimento no Service Bus: <strong>Peek-Lock</strong> vs <strong>Receive-and-Delete</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300"><strong>Peek-Lock</strong> (padrão): Bloqueia a mensagem, o cliente a processa e a completa (deleta).<br><strong>Receive-and-Delete</strong>: A mensagem é deletada assim que é recebida.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Azure Cache for Redis</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um serviço de cache distribuído e gerenciado, baseado no Redis. Usado para melhorar a performance e escalabilidade de aplicações, armazenando dados frequentemente acessados na memória.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são os <strong>escopos de política</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Políticas podem ser aplicadas em 4 níveis (do mais amplo para o mais específico): <strong>Global</strong>, <strong>Produto</strong>, <strong>API</strong> e <strong>Operação</strong>.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o recurso <strong>Capture</strong> do Event Hubs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Captura e armazena automaticamente os eventos de um Event Hub em um Blob Storage ou Data Lake Storage, em formato Avro.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Sessões</strong> no Service Bus?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Garantem o processamento ordenado (FIFO) e exclusivo de um grupo de mensagens relacionadas, identificadas por um `SessionId`.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Schema Registry</strong> no Event Hubs?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um repositório centralizado para esquemas de eventos (ex: Avro), permitindo que produtores e consumidores validem e serializem/desserializem dados de forma consistente.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>Developer Portal</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um site gerado automaticamente e customizável onde desenvolvedores podem descobrir suas APIs, ler a documentação, obter chaves e testar as operações.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>timeout de visibilidade</strong> no Queue Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O tempo que uma mensagem fica invisível na fila após ser lida. Se o processamento não for concluído e a mensagem deletada nesse tempo, ela reaparece na fila.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Tópicos do Sistema</strong> no Event Grid?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Tópicos embutidos para serviços do Azure (Blob Storage, Service Bus, etc.) que publicam eventos automaticamente, facilitando a integração.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a <strong>detecção de duplicados</strong> no Service Bus?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Um recurso que descarta mensagens duplicadas enviadas para uma fila ou tópico dentro de uma janela de tempo configurável, com base no `MessageId`.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Como lidar com <strong>mensagens venenosas (poison messages)</strong> no Queue Storage?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Verificando a propriedade `DequeueCount`. Se exceder um limite, a lógica do seu app deve mover a mensagem para uma fila separada de "venenosas" para análise.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é uma <strong>Named Value (Propriedade)</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma variável global (chave-valor) que pode ser usada em políticas do APIM. Pode ser um valor literal ou um segredo importado do Key Vault.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que são <strong>Filtros</strong> em uma assinatura do Service Bus Topic?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Regras que permitem que uma assinatura receba apenas um subconjunto das mensagens publicadas no tópico, com base em suas propriedades (ex: `color = 'blue'`).</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual o caso de uso para a política <strong>`set-backend-service`</strong> no APIM?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Para rotear dinamicamente uma requisição para um serviço de back-end diferente do que está configurado na API, com base em condições na política.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a biblioteca <strong>`EventProcessorClient`</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma classe no SDK do Event Hubs que simplifica o consumo de eventos, gerenciando a distribuição de partições entre consumidores e o checkpointing.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é a funcionalidade de <strong>autoforwarding</strong> no Service Bus?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Permite encadear filas ou assinaturas, fazendo com que mensagens de uma entidade sejam automaticamente movidas para outra, sem código.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o <strong>dead-lettering</strong> no Event Grid?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma configuração que envia eventos que não puderam ser entregues a um endpoint (após retries) para uma conta de armazenamento para análise posterior.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Quando usar o <strong>Azure SignalR Service</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Para adicionar comunicação web em tempo real (push de conteúdo do servidor para o cliente) a aplicações, como chats, dashboards e notificações ao vivo.</p></div>
+                </div></div>
+                <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">Qual a diferença entre <strong>API Gateway</strong> e <strong>API Management</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">O Gateway é o componente que roteia as requisições. O Management é a solução completa que inclui o gateway, um portal do desenvolvedor e um plano de controle para gerenciamento.</p></div>
+                </div></div>
+                 <div class="flashcard-scene h-64"><div class="flashcard relative w-full h-full">
+                    <div class="flashcard-face flashcard-front absolute w-full h-full p-6 bg-gray-800 rounded-lg shadow-lg flex flex-col justify-center items-center text-center"><h3 class="text-lg font-semibold text-cyan-400">FRENTE</h3><p class="mt-2 text-gray-300">O que é o schema <strong>CloudEvents</strong>?</p></div>
+                    <div class="flashcard-face flashcard-back absolute w-full h-full p-6 bg-gray-700 rounded-lg shadow-lg flex flex-col justify-center"><h3 class="text-lg font-semibold text-cyan-300">VERSO</h3><p class="mt-2 text-gray-300">Uma especificação da CNCF para descrever dados de eventos de forma comum, visando a interoperabilidade entre diferentes serviços e plataformas.</p></div>
+                </div></div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.flashcard');
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                card.classList.toggle('is-flipped');
+            });
+        });
+    </script>
+</body>
+</html>
+
